@@ -1,0 +1,118 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: rgb(224, 232, 255);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#summary {
+    text-align: center;
+    width: 350px;
+    background-color: white;
+    color: rgb(114, 128, 167);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+#inner-container {
+    width: 75%;
+    margin: auto;
+}
+
+#hero {
+    width: 100%;
+}
+
+#header {
+    margin: 20px 0;
+    color: hsl(223, 47%, 23%);
+}
+
+#header-text {
+   margin-bottom: 20px;
+
+}
+
+#plan-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#plan-left {
+    display: flex;
+}
+
+#left-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#plan-right p {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+}
+
+#annual-head {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+#proceed {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 15px 30px;
+    background-color: rgba(91, 78, 237, 1);
+    border-radius: 10px;
+    color: white;
+}
+
+#cancel {
+    margin-bottom: 20px;
+}
+
+#plan-right p:hover {
+    text-decoration: none;
+    color: rgba(91, 78, 237, 0.7);
+}
+
+#proceed:hover {
+    background-color: rgba(91, 78, 237, 0.7);
+}
+
+p:last-of-type:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.point:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 400px) {
+    main {
+        background: url("images/pattern-background-desktop.svg") no-repeat top center/ 100% 60%;
+    }
+}
